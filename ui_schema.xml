@@ -1,0 +1,686 @@
+<?xml version="1.0"?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/2002/xforms"
+        xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:jr="http://openrosa.org/javarosa"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <h:head>
+        <h:title>Fill This In</h:title>
+        <model>
+            <instance>
+                <faims id="Fill_This_In">
+                    <style>
+                        <orientation>
+                            <orientation/>
+                        </orientation>
+                        <even>
+                            <layout_weight/>
+                        </even>
+                        <large>
+                            <layout_weight/>
+                        </large>
+                    </style>
+                    <User>
+                        <User>
+                            <Select_User/>
+                            <Login/>
+                        </User>
+                    </User>
+                    <Context>
+                        <Main>
+                            <Colgroup_0>
+                                <Col_0>
+                                    <timestamp/>
+                                </Col_0>
+                                <Col_1>
+                                    <author/>
+                                </Col_1>
+                            </Colgroup_0>
+                            <Colgroup_1>
+                                <Col_0>
+                                    <Inventory_Number/>
+                                </Col_0>
+                                <Col_1>
+                                    <Artifact_Number/>
+                                </Col_1>
+                            </Colgroup_1>
+                            <Colgroup_2>
+                                <Col_0>
+                                    <Unit/>
+                                </Col_0>
+                                <Col_1>
+                                    <Subunit/>
+                                </Col_1>
+                            </Colgroup_2>
+                            <Colgroup_3>
+                                <Col_0>
+                                    <Locus/>
+                                </Col_0>
+                                <Col_1>
+                                    <Conjunto/>
+                                </Col_1>
+                                <Col_2>
+                                    <Special_Find_Number/>
+                                </Col_2>
+                            </Colgroup_3>
+                            <Colgroup_4>
+                                <Col_0>
+                                    <Style/>
+                                </Col_0>
+                                <Col_1>
+                                    <Period/>
+                                </Col_1>
+                            </Colgroup_4>
+                            <Colgroup_5>
+                                <Col_0>
+                                    <Functional_Category/>
+                                </Col_0>
+                                <Col_1>
+                                    <Functional_Category_2/>
+                                </Col_1>
+                            </Colgroup_5>
+                            <Ident/>
+                        </Main>
+                        <General>
+                            <Sherd_Type/>
+                            <General_WARE_Category/>
+                            <General_Form_Category/>
+                        </General>
+                        <Firing>
+                            <Firing/>
+                        </Firing>
+                        <Surface>
+                            <Surface_Condition/>
+                            <Surface_Condition_2/>
+                            <Slip_Color/>
+                            <Predominant_Paste_Color/>
+                            <Paste_Code/>
+                            <Exterior_Deco/>
+                            <Interior_Deco/>
+                        </Surface>
+                        <Measurements>
+                            <Weight/>
+                            <Colgroup_0>
+                                <Col_0>
+                                    <Base_Thickness/>
+                                </Col_0>
+                                <Col_1>
+                                    <Base_Diameter/>
+                                </Col_1>
+                                <Col_2>
+                                    <Base_Percentage/>
+                                </Col_2>
+                            </Colgroup_0>
+                            <Colgroup_1>
+                                <Col_0>
+                                    <Body_Thickness/>
+                                </Col_0>
+                                <Col_1>
+                                    <Body_Diameter/>
+                                </Col_1>
+                            </Colgroup_1>
+                            <Colgroup_2>
+                                <Col_0>
+                                    <Neck_Thickness/>
+                                </Col_0>
+                                <Col_1>
+                                    <Neck_Height/>
+                                </Col_1>
+                            </Colgroup_2>
+                            <Colgroup_3>
+                                <Col_0>
+                                    <Rim_Diameter/>
+                                </Col_0>
+                                <Col_1>
+                                    <Rim_Thickness/>
+                                </Col_1>
+                                <Col_2>
+                                    <Rim_Percentage/>
+                                </Col_2>
+                            </Colgroup_3>
+                            <Rim_Profile/>
+                            <Colgroup_4>
+                                <Col_0>
+                                    <Handle_Width/>
+                                </Col_0>
+                                <Col_1>
+                                    <Handle_Thickness/>
+                                </Col_1>
+                            </Colgroup_4>
+                            <Colgroup_5>
+                                <Col_0>
+                                    <Handle_Length/>
+                                </Col_0>
+                                <Col_1>
+                                    <Handle_Height/>
+                                </Col_1>
+                            </Colgroup_5>
+                            <Handle_Form/>
+                            <Spout_Diameter/>
+                        </Measurements>
+                        <Files>
+                            <Photograph/>
+                            <Button_Photograph/>
+                            <Attach_Photo/>
+                            <Button_Attach_Photo/>
+                            <Attach_Sketch/>
+                            <Button_Attach_Sketch/>
+                        </Files>
+                        <Validation>
+                            <Notes/>
+                            <Questions/>
+                            <Validate/>
+                            <New_Bag/>
+                            <Same_Bag/>
+                        </Validation>
+                        <Search>
+                            <Colgroup_0>
+                                <Col_0>
+                                    <Search_Term/>
+                                </Col_0>
+                                <Col_1>
+                                    <Search_Button/>
+                                </Col_1>
+                            </Colgroup_0>
+                            <Entity_List/>
+                        </Search>
+                    </Context>
+                </faims>
+            </instance>
+        </model>
+    </h:head>
+    <h:body>
+        <group ref="style">
+            <label/>
+            <group ref="orientation">
+                <label/>
+                <input ref="orientation">
+                    <label>horizontal</label>
+                </input>
+            </group>
+            <group ref="even">
+                <label/>
+                <input ref="layout_weight">
+                    <label>1</label>
+                </input>
+            </group>
+            <group ref="large">
+                <label/>
+                <input ref="layout_weight">
+                    <label>3</label>
+                </input>
+            </group>
+        </group>
+        <group ref="User">
+            <label>{User}</label>
+            <group ref="User">
+                <label>{User}</label>
+                <select1 ref="Select_User">
+                    <label>{Select_User}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <trigger ref="Login">
+                    <label>{Login}</label>
+                </trigger>
+            </group>
+        </group>
+        <group ref="Context" faims_archent_type="Context">
+            <label>{Context}</label>
+            <group ref="Main">
+                <label>{Main}</label>
+                <group ref="Colgroup_0" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input ref="timestamp" faims_attribute_name="Context timestamp" faims_attribute_type="measure"
+                               faims_read_only="true" faims_annotation="false" faims_certainty="false">
+                            <label>{timestamp}</label>
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input ref="author" faims_attribute_name="Context author" faims_attribute_type="measure"
+                               faims_read_only="true" faims_annotation="false" faims_certainty="false">
+                            <label>{author}</label>
+                        </input>
+                    </group>
+                </group>
+                <group ref="Colgroup_1" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Inventory_Number"
+                               faims_attribute_name="Inventory Number" faims_style_class="required">
+                            <label>{Inventory_Number}</label>
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Artifact_Number"
+                               faims_attribute_name="Artifact Number" faims_style_class="required">
+                            <label>{Artifact_Number}</label>
+                        </input>
+                    </group>
+                </group>
+                <group ref="Colgroup_2" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Unit" faims_attribute_name="Unit"
+                               faims_style_class="required">
+                            <label>{Unit}</label>
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Subunit" faims_attribute_name="Subunit">
+                            <label>{Subunit}</label>
+                        </input>
+                    </group>
+                </group>
+                <group ref="Colgroup_3" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Locus" faims_attribute_name="Locus"
+                               faims_style_class="required">
+                            <label>{Locus}</label>
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Conjunto" faims_attribute_name="Conjunto"
+                               faims_style_class="required">
+                            <label>{Conjunto}</label>
+                        </input>
+                    </group>
+                    <group ref="Col_2" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Special_Find_Number"
+                               faims_attribute_name="Special Find Number">
+                            <label>{Special_Find_Number}</label>
+                        </input>
+                    </group>
+                </group>
+                <group ref="Colgroup_4" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <select1 faims_attribute_type="vocab" ref="Style" faims_attribute_name="Style"
+                                 faims_style_class="required">
+                            <label>{Style}</label>
+                            <item>
+                                <label>Options not loaded</label>
+                                <value>0</value>
+                            </item>
+                        </select1>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <select1 faims_attribute_type="vocab" ref="Period" faims_attribute_name="Period"
+                                 faims_style_class="required">
+                            <label>{Period}</label>
+                            <item>
+                                <label>Options not loaded</label>
+                                <value>0</value>
+                            </item>
+                        </select1>
+                    </group>
+                </group>
+                <group ref="Colgroup_5" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <select1 faims_attribute_type="vocab" ref="Functional_Category"
+                                 faims_attribute_name="Functional Category" faims_style_class="required">
+                            <label>{Functional_Category}</label>
+                            <item>
+                                <label>Options not loaded</label>
+                                <value>0</value>
+                            </item>
+                        </select1>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <select1 faims_attribute_type="vocab" ref="Functional_Category_2"
+                                 faims_attribute_name="Functional Category 2">
+                            <label>{Functional_Category_2}</label>
+                            <item>
+                                <label>Options not loaded</label>
+                                <value>0</value>
+                            </item>
+                        </select1>
+                    </group>
+                </group>
+                <input faims_attribute_type="measure" ref="Ident" faims_attribute_name="Ident" faims_read_only="true">
+                    <label/>
+                </input>
+            </group>
+            <group ref="General">
+                <label>{General}</label>
+                <select1 faims_attribute_type="vocab" ref="Sherd_Type" faims_attribute_name="Sherd Type"
+                         faims_style_class="required">
+                    <!--WARNING: Style in c attribute not applied; styling conflict exists due to "notnull" flag-->
+                    <label>{Sherd_Type}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <select1 type="image" faims_attribute_type="vocab" ref="General_WARE_Category"
+                         faims_attribute_name="General WARE Category" faims_style_class="required">
+                    <!--WARNING: Style in c attribute not applied; styling conflict exists due to "notnull" flag-->
+                    <label>{General_WARE_Category}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <select1 type="image" faims_attribute_type="vocab" ref="General_Form_Category"
+                         faims_attribute_name="General Form Category" faims_style_class="required">
+                    <!--WARNING: Style in c attribute not applied; styling conflict exists due to "notnull" flag-->
+                    <label>{General_Form_Category}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+            </group>
+            <group ref="Firing">
+                <label>{Firing}</label>
+                <select1 type="image" faims_attribute_type="vocab" ref="Firing" faims_attribute_name="Firing"
+                         faims_style_class="required">
+                    <!--WARNING: Style in c attribute not applied; styling conflict exists due to "notnull" flag-->
+                    <label>{Firing}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+            </group>
+            <group ref="Surface">
+                <label>{Surface}</label>
+                <select1 type="image" faims_attribute_type="vocab" ref="Surface_Condition"
+                         faims_attribute_name="Surface Condition" faims_style_class="required">
+                    <!--WARNING: Style in c attribute not applied; styling conflict exists due to "notnull" flag-->
+                    <label>{Surface_Condition}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <select1 type="image" faims_attribute_type="vocab" ref="Surface_Condition_2"
+                         faims_attribute_name="Surface Condition 2">
+                    <label>{Surface_Condition_2}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <select1 faims_attribute_type="vocab" ref="Slip_Color" faims_attribute_name="Slip Color">
+                    <label>{Slip_Color}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <select1 faims_attribute_type="vocab" ref="Predominant_Paste_Color"
+                         faims_attribute_name="Predominant Paste Color" faims_style_class="required">
+                    <!--WARNING: Style in c attribute not applied; styling conflict exists due to "notnull" flag-->
+                    <label>{Predominant_Paste_Color}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <input faims_attribute_type="measure" ref="Paste_Code" faims_attribute_name="Paste Code">
+                    <label>{Paste_Code}</label>
+                    <!--WARNING: No type t was given for this view; assuming it is an input-->
+                </input>
+                <select1 type="image" faims_attribute_type="vocab" ref="Exterior_Deco"
+                         faims_attribute_name="Exterior Deco">
+                    <label>{Exterior_Deco}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <select1 type="image" faims_attribute_type="vocab" ref="Interior_Deco"
+                         faims_attribute_name="Interior Deco">
+                    <label>{Interior_Deco}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+            </group>
+            <group ref="Measurements">
+                <label>{Measurements}</label>
+                <input faims_attribute_type="measure" ref="Weight"
+                       faims_attribute_name="Weight" faims_style_class="required">
+                    <label>{Weight}</label>
+                </input>
+                <group ref="Colgroup_0" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Base_Thickness"
+                               faims_attribute_name="Base Thickness">
+                            <label>{Base_Thickness}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Base_Diameter" faims_attribute_name="Base Diameter">
+                            <label>{Base_Diameter}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                    <group ref="Col_2" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Base_Percentage"
+                               faims_attribute_name="Base Percentage">
+                            <label>{Base_Percentage}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                </group>
+                <group ref="Colgroup_1" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Body_Thickness"
+                               faims_attribute_name="Body Thickness">
+                            <label>{Body_Thickness}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Body_Diameter" faims_attribute_name="Body Diameter">
+                            <label>{Body_Diameter}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                </group>
+                <group ref="Colgroup_2" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Neck_Thickness"
+                               faims_attribute_name="Neck Thickness">
+                            <label>{Neck_Thickness}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Neck_Height" faims_attribute_name="Neck Height">
+                            <label>{Neck_Height}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                </group>
+                <group ref="Colgroup_3" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Rim_Diameter" faims_attribute_name="Rim Diameter">
+                            <label>{Rim_Diameter}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Rim_Thickness" faims_attribute_name="Rim Thickness">
+                            <label>{Rim_Thickness}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                    <group ref="Col_2" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Rim_Percentage"
+                               faims_attribute_name="Rim Percentage">
+                            <label>{Rim_Percentage}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                </group>
+                <select1 type="image" faims_attribute_type="vocab" ref="Rim_Profile" faims_attribute_name="Rim Profile">
+                    <label>{Rim_Profile}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <group ref="Colgroup_4" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Handle_Width" faims_attribute_name="Handle Width">
+                            <label>{Handle_Width}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Handle_Thickness"
+                               faims_attribute_name="Handle Thickness">
+                            <label>{Handle_Thickness}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                </group>
+                <group ref="Colgroup_5" faims_style="orientation">
+                    <label/>
+                    <group ref="Col_0" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Handle_Length" faims_attribute_name="Handle Length">
+                            <label>{Handle_Length}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                    <group ref="Col_1" faims_style="even">
+                        <label/>
+                        <input faims_attribute_type="measure" ref="Handle_Height" faims_attribute_name="Handle Height">
+                            <label>{Handle_Height}</label>
+                            <!--WARNING: No type t was given for this view; assuming it is an input-->
+                        </input>
+                    </group>
+                </group>
+                <select1 type="image" faims_attribute_type="vocab" ref="Handle_Form" faims_attribute_name="Handle Form">
+                    <label>{Handle_Form}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select1>
+                <input faims_attribute_type="measure" ref="Spout_Diameter" faims_attribute_name="Spout Diameter">
+                    <label>{Spout_Diameter}</label>
+                    <!--WARNING: No type t was given for this view; assuming it is an input-->
+                </input>
+            </group>
+            <group ref="Files">
+                <label>{Files}</label>
+                <select type="camera" faims_attribute_type="measure" faims_sync="true" ref="Photograph"
+                        faims_attribute_name="Photograph">
+                    <label>{Photograph}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select>
+                <trigger ref="Button_Photograph">
+                    <label>{Button_Photograph}</label>
+                </trigger>
+                <select type="file" faims_attribute_type="measure" faims_sync="true" ref="Attach_Photo"
+                        faims_attribute_name="Attach Photo">
+                    <label>{Attach_Photo}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select>
+                <trigger ref="Button_Attach_Photo">
+                    <label>{Button_Attach_Photo}</label>
+                </trigger>
+                <select type="file" faims_attribute_type="measure" faims_sync="true" ref="Attach_Sketch"
+                        faims_attribute_name="Attach Sketch">
+                    <label>{Attach_Sketch}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>0</value>
+                    </item>
+                </select>
+                <trigger ref="Button_Attach_Sketch">
+                    <label>{Button_Attach_Sketch}</label>
+                </trigger>
+            </group>
+            <group ref="Validation">
+                <label>{Validation}</label>
+                <input faims_attribute_type="measure" ref="Notes" faims_attribute_name="Notes">
+                    <label>{Notes}</label>
+                </input>
+                <input faims_attribute_type="measure" ref="Questions" faims_attribute_name="Questions">
+                    <label>{Questions}</label>
+                </input>
+                <trigger ref="Validate">
+                    <label>{Validate}</label>
+                </trigger>
+                <trigger ref="New_Bag">
+                    <label>{New_Bag}</label>
+                </trigger>
+                <trigger ref="Same_Bag">
+                    <label>{Same_Bag}</label>
+                </trigger>
+            </group>
+            <group ref="Search" faims_scrollable="false">
+                <label>{search}</label>
+                <group faims_style="orientation" ref="Colgroup_0">
+                    <label/>
+                    <group faims_style="even" ref="Col_0">
+                        <label/>
+                        <input ref="Search_Term">
+                            <label>{Search_Term}</label>
+                        </input>
+                    </group>
+                    <group faims_style="large" ref="Col_1">
+                        <label/>
+                        <trigger ref="Search_Button">
+                            <label>{Search}</label>
+                        </trigger>
+                    </group>
+                </group>
+                <select1 appearance="compact" ref="Entity_List">
+                    <label>{Entity_List}</label>
+                    <item>
+                        <label>Options not loaded</label>
+                        <value>Options not loaded</value>
+                    </item>
+                </select1>
+            </group>
+        </group>
+    </h:body>
+</h:html>

@@ -1,0 +1,1341 @@
+<?xml version="1.0"?>
+<dataSchema>
+    <ArchaeologicalElement name="Context">
+        <description/>
+        <property name="Context timestamp" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Context author" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Inventory Number" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Conjunto" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Unit" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Subunit" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Locus" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Artifact Number" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Special Find Number" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Ident" isIdentifier="true" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Style" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_UNKx_}
+                    <description/>
+                </term>
+                <term>{_CUP_}
+                    <description/>
+                </term>
+                <term>{_MCE_}
+                    <description/>
+                </term>
+                <term>{_MCM_}
+                    <description/>
+                </term>
+                <term>{_MCL_}
+                    <description/>
+                </term>
+                <term>{_TRS_}
+                    <description/>
+                </term>
+                <term>{_CJC_}
+                    <description/>
+                </term>
+                <term>{_CJK_}
+                    <description/>
+                </term>
+                <term>{_LME_}
+                    <description/>
+                </term>
+                <term>{_LMM_}
+                    <description/>
+                </term>
+                <term>{_LML_}
+                    <description/>
+                </term>
+                <term>{_CHM_}
+                    <description/>
+                </term>
+                <term>{_CHI_}
+                    <description/>
+                </term>
+                <term>{_INK_}
+                    <description/>
+                </term>
+                <term>{_COLx_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Period" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term><!--WARNING: Option is duplicated in this menu-->{_UNK_}
+                    <description/>
+                </term>
+                <term>{_FOR_}
+                    <description/>
+                </term>
+                <term>{_EIP_}
+                    <description/>
+                </term>
+                <term>{_MHO_}
+                    <description/>
+                </term>
+                <term>{_LIP_}
+                    <description/>
+                </term>
+                <term>{_LHO_}
+                    <description/>
+                </term>
+                <term>{_LPH_}
+                    <description/>
+                </term>
+                <term>{_LHC_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_COL_}
+                    <description/>
+                </term>
+                <term>{_ECO_}
+                    <description/>
+                </term>
+                <term>{_LCOL_}
+                    <description/>
+                </term>
+                <term>{_REP_}
+                    <description/>
+                </term>
+                <term>{_MOD_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Functional Category" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_COO_}
+                    <description/>
+                </term>
+                <term>{_COS_}
+                    <description/>
+                </term>
+                <term>{_PCA_}
+                    <description/>
+                </term>
+                <term>{_PCU_}
+                    <description/>
+                </term>
+                <term>{_SER_}
+                    <description/>
+                </term>
+                <term>{_STO_}
+                    <description/>
+                </term>
+                <term>{_SFU_}
+                    <description/>
+                </term>
+                <term>{_TRN_}
+                    <description/>
+                </term>
+                <term>{_NOB_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Functional Category 2" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term><!--WARNING: Option is duplicated in this menu-->{_COO_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_COS_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_PCA_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_PCU_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_SER_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_STO_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_SFU_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_TRN_}
+                    <description/>
+                </term>
+                <term><!--WARNING: Option is duplicated in this menu-->{_NOB_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Sherd Type" type="vocab">
+            <description>Type of Sherd</description>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_Ax_}
+                    <description/>
+                </term>
+                <term>{_B_}
+                    <description/>
+                </term>
+                <term>{_C_}
+                    <description/>
+                </term>
+                <term>{_COx_}
+                    <description/>
+                </term>
+                <term>{_D_}
+                    <description/>
+                </term>
+                <term>{_DB_}
+                    <description/>
+                </term>
+                <term>{_E_}
+                    <description/>
+                </term>
+                <term>{_Fx_}
+                    <description/>
+                </term>
+                <term>{_H_}
+                    <description/>
+                </term>
+                <term>{_L_}
+                    <description/>
+                </term>
+                <term>{_M1_}
+                    <description/>
+                </term>
+                <term>{_N_}
+                    <description/>
+                </term>
+                <term>{_Ox_}
+                    <description/>
+                </term>
+                <term>{_OB_}
+                    <description/>
+                </term>
+                <term>{_OH_}
+                    <description/>
+                </term>
+                <term>{_ON_}
+                    <description/>
+                </term>
+                <term>{_P1_}
+                    <description/>
+                </term>
+                <term>{_P2_}
+                    <description/>
+                </term>
+                <term>{_P4_}
+                    <description/>
+                </term>
+                <term>{_Rx_}
+                    <description/>
+                </term>
+                <term>{_RB_}
+                    <description/>
+                </term>
+                <term>{_RN_}
+                    <description/>
+                </term>
+                <term>{_RY_}
+                    <description/>
+                </term>
+                <term>{_S_}
+                    <description/>
+                </term>
+                <term>{_SH_}
+                    <description/>
+                </term>
+                <term>{_T2_}
+                    <description/>
+                </term>
+                <term>{_W_}
+                    <description/>
+                </term>
+                <term>{_Z_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="General WARE Category" type="vocab">
+            <description>Todo: Add description</description>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term pictureURL="files/data/Gallery/Ware/12_WCW.jpg">{_WCW_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_VID-SNO.jpg">{_VID_SNO_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_VID-SBB.jpg">{_VID_SBB_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_VID-PANPLA.jpg">{_VID_PANPLA_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_VID-PANP.jpg">{_VID_PANP_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_VID-PANBW.jpg">{_VID_PANBW_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_VID-OTH.jpg">{_VID_OTH_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_VID-GYG.jpg">{_VID_GYG_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_STN.jpg">{_STN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_PRW.jpg">{_PRW_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_PRC.jpg">{_PRC_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_PLN.jpg">{_PLN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_PIP.jpg">{_PIP_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_PAL.jpg">{_PAL_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_OTH.jpg">{_OTH_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_LOZ.jpg">{_LOZ_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_DKK.jpg">{_DKK_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_BOT.jpg">{_BOT_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Ware/12_BBW.jpg">{_BBW_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="General Form Category" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term pictureURL="files/data/Gallery/Form/16_BLB.jpg">{_Bowls_}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Form/16_BLB.jpg">{_BLBx_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CBC.jpg">{_CBC_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CBR.jpg">{_CBR_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_LOB.jpg">{_LOB_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_LBL.jpg">{_LBL_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_OSM.jpg">{_OSM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_POB.jpg">{_POB_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_ROB.jpg">{_ROB_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SBO.jpg">{_SBO_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SBR.jpg">{_SBR_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SOA.jpg">{_SOA_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SOB.jpg">{_SOB_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SRB.jpg">{_SRB_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SSB.jpg">{_SSB_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Form/16_BPL.jpg">{_Plates_}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Form/16_BPL.jpg">{_BPL_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_LPO.jpg">{_LPO_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_PLM.jpg">{_PLM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_PNI.jpg">{_PNI_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_PPL.jpg">{_PPL_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_PPP.jpg">{_PPP_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_RPO.jpg">{_RPO_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SRP.jpg">{_SRP_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Form/16_ARS.jpg">{_Jars_}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Form/16_ARS.jpg">{_ARS_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CNC.jpg">{_CNC_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CNE.jpg">{_CNE_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CNR.jpg">{_CNR_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CNX.jpg">{_CNX_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_HBL.jpg">{_HBL_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_HBS.jpg">{_HBS_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Form/16_TRR.jpg">{_Tinajas_y_Botijas_}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Form/16_TRR.jpg">{_TRR_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_TSR.jpg">{_TSR_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_TTE.jpg">{_TTE_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_TTL.jpg">{_TTL_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_TTM.jpg">{_TTM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_TTU.jpg">{_TTU_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Form/16_BLC.jpg">{_Botellas_}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Form/16_BLC.jpg">{_BLC_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_BLS.jpg">{_BLS_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_BNI.jpg">{_BNI_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_BSC.jpg">{_BSC_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_BSS.jpg">{_BSS_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Form/16_FLO.jpg">{_Cups_}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Form/16_FLO.jpg">{_FLO_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_KER.jpg">{_KER_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_LCO.jpg">{_LCO_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_LCP.jpg">{_LCP_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SCO.jpg">{_SCO_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_SCP.jpg">{_SCP_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Form/16_RJ.jpg">{_Ollas_}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Form/16_RJ.jpg">{_RJ_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_MTG.jpg">{_MTG_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_OCC.jpg">{_OCC_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_OER.jpg">{_OER_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_OFR.jpg">{_OFR_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_ONI.jpg">{_ONI_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_OPN.jpg">{_OPN_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_OSC.jpg">{_OSC_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_OSR.jpg">{_OSR_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Form/16_ALS.jpg">{_Other_}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Form/16_UKN.jpg">{_UKN_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_ALS.jpg">{_ALS_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_AP.jpg">{_APx_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_AZL.jpg">{_AZL_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CIR.jpg">{_CIR_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CLB.jpg">{_CLB_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_CRS.jpg">{_CRS_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_FGN.jpg">{_FGN_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_HMS.jpg">{_HMS_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_IMU.jpg">{_IMU_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_MLD.jpg">{_MLD_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_RAY.jpg">{_RAY_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_TEJ.jpg">{_TEJ_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_TIN.jpg">{_TIN_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Form/16_WOR.jpg">{_WOR_}
+                        <description/>
+                    </term>
+                </term>
+            </lookup>
+        </property>
+        <property name="Firing" type="vocab">
+            <description>Firing</description>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term pictureURL="files/data/Gallery/Firing/19_CE.jpg">{_CE_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_CI.jpg">{_CI_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_CN.jpg">{_CNxx_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_CO.jpg">{_CO_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_CR.jpg">{_CR_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_CS.jpg">{_CSx_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_CX.jpg">{_CX_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IA.jpg">{_IA_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IE.jpg">{_IE_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IG.jpg">{_IG_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IK.jpg">{_IK_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IL.jpg">{_IL_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IM.jpg">{_IMx_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IN.jpg">{_INx_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IO.jpg">{_IO_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IP.jpg">{_IP_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IR.jpg">{_IR_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IT.jpg">{_IT_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IU.jpg">{_IU_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IX.jpg">{_IX_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IY.jpg">{_IY_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_IZ.jpg">{_IZ_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Firing/19_VI.jpg">{_VI_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Surface Condition" type="vocab">
+            <description>Surface Condition</description>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term pictureURL="files/data/Gallery/Surface/20_WW.jpg">{_WW_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_VN.jpg">{_VN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_SS.jpg">{_SSx_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_SN.jpg">{_SN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NS.jpg">{_NS_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NN.jpg">{_NN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NE.jpg">{_NE_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NC.jpg">{_NC_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NB.jpg">{_NB_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_GN.jpg">{_GN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_EN.jpg">{_EN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_EE.jpg">{_EE_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_CS.jpg">{_CS_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_CN.jpg">{_CN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_CC.jpg">{_CC_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_BN.jpg">{_BN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_BB.jpg">{_BB_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Surface Condition 2" type="vocab">
+            <description>Surface Condition</description>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term pictureURL="files/data/Gallery/Surface/20_WW.jpg">{_WW_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_VN.jpg">{_VN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_SS.jpg">{_SSx_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_SN.jpg">{_SN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NS.jpg">{_NS_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NN.jpg">{_NN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NE.jpg">{_NE_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NC.jpg">{_NC_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_NB.jpg">{_NB_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_GN.jpg">{_GN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_EN.jpg">{_EN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_EE.jpg">{_EE_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_CS.jpg">{_CS_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_CN.jpg">{_CN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_CC.jpg">{_CC_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_BN.jpg">{_BN_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Surface/20_BB.jpg">{_BB_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Predominant Paste Color" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_BKR_}
+                    <description/>
+                </term>
+                <term>{_BLB_}
+                    <description/>
+                </term>
+                <term>{_BLK_}
+                    <description/>
+                </term>
+                <term>{_BRN_}
+                    <description/>
+                </term>
+                <term>{_GWR_}
+                    <description/>
+                </term>
+                <term>{_ORG_}
+                    <description/>
+                </term>
+                <term>{_RMR_}
+                    <description/>
+                </term>
+                <term>{_VER_}
+                    <description/>
+                </term>
+                <term>{_CRM_}
+                    <description/>
+                </term>
+                <term>{_NOB_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Paste Code" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Photograph" type="file" file="true" thumbnail="true">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Attach Photo" type="file" file="true" thumbnail="true">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Attach Sketch" type="file" file="true" thumbnail="true">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Base Thickness" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Weight" type="measure" >
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Base Diameter" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Base Percentage" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Body Thickness" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Body Diameter" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Neck Thickness" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Neck Height" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Rim Diameter" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Rim Thickness" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Rim Percentage" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Rim Profile" type="vocab">
+            <description>Rim profile</description>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_NOB_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Rims/17_BOT1.jpg">{Botijas}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT1.jpg">{_BOT1_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT2.jpg">{_BOT2_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT3.jpg">{_BOT3_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT4.jpg">{_BOT4_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT5.jpg">{_BOT5_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT6.jpg">{_BOT6_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT7.jpg">{_BOT7_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT8.jpg">{_BOT8_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_BOT9.jpg">{_BOT9_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Rims/17_OCEgim.jpg">{Compound}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Rims/17_OCEgim.jpg">{_OCEgim_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OCHEcih.jpg">{_OCHEcih_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OCHEcu.jpg">{_OCHEcu_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OCHUg.jpg">{_OCHUg_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OCUxu.jpg">{_OCUxu_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OG_CHE_Uge.jpg">{_OG_CHE_Uge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OG_CHUge.jpg">{_OG_CHUge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OGEgi.jpg">{_OGEgi_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OGEgi_.jpg">{_OGEgi__}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OGEMoemm.jpg">{_OGEMoemm_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OGIge.jpg">{_OGIge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OGIMg.jpg">{_OGIMg_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OGUgem.jpg">{_OGUgem_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OGU_IHge.jpg">{_OGU_IHge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OGUxu.jpg">{_OGUxu_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OG_XHIH_Uge.jpg">{_OG_XHIH_Uge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OG_XHU_IHxh.jpg">{_OG_XHU_IHxh_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXEHc.jpg">{_OXEHc_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXEH.jpg">{_OXEH_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXExem.jpg">{_OXExem_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OX_GIge.jpg">{_OX_GIge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXHEHgu.jpg">{_OXHEHgu_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXHUge.jpg">{_OXHUge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXHU.jpg">{_OXHU_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXHUxhu.jpg">{_OXHUxhu_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXH_XEge.jpg">{_OXH_XEge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXH_XEgemm.jpg">{_OXH_XEgemm_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXU_EH.jpg">{_OXU_EH_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OXUge.jpg">{_OXUge_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_OX_XHIx.jpg">{_OX_XHIx_}
+                        <description/>
+                    </term>
+                </term>
+                <term pictureURL="files/data/Gallery/Rims/17_SCE.jpg">{Simple}
+                    <description/>
+                    <term pictureURL="files/data/Gallery/Rims/17_SCE.jpg">{_SCE_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SCEM.jpg">{_SCEM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SCHE.jpg">{_SCHE_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SCHEMM.jpg">{_SCHEMM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SCI.jpg">{_SCI_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SCIM.jpg">{_SCIM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SCU.jpg">{_SCU_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SGE.jpg">{_SGE_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SGEM.jpg">{_SGEM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SGI.jpg">{_SGI_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SGIH.jpg">{_SGIH_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SGU.jpg">{_SGU_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SXE.jpg">{_SXE_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SXEH.jpg">{_SXEH_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SXEM.jpg">{_SXEM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SXEMM.jpg">{_SXEMM_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SXI.jpg">{_SXI_}
+                        <description/>
+                    </term>
+                    <term pictureURL="files/data/Gallery/Rims/17_SXU.jpg">{_SXU_}
+                        <description/>
+                    </term>
+                </term>
+            </lookup>
+        </property>
+        <property name="Handle Width" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Handle Thickness" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Handle Length" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Handle Height" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Handle Form" type="vocab">
+            <description>Form of the handle</description>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_NOB_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_T.jpg">{_T_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_R.jpg">{_R_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_O.jpg">{_O_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_FS.jpg">{_FS_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_FC.jpg">{_FC_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_F.jpg">{_F_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_BR.jpg">{_BR_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_BK.jpg">{_BK_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Handles/18_A.jpg">{_A_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Spout Diameter" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Exterior Deco" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_NOB_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_AP.jpg">{_AP_}
+                    <description>Apliqué / Aplicación</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_ES.jpg">{_ES_}
+                    <description>Mechanical Stamping / Estampado Mechanico</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_EX.jpg">{_EX_}
+                    <description>Excising / Subtracción o excisa</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_FP.jpg">{_FP_}
+                    <description>Finger-pinching / “Pizca” con dedos</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_GR.jpg">{_GR_}
+                    <description>Grooving / Ranuras</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_IM.jpg">{_IM_}
+                    <description>Impressing / Impresión</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_IN.jpg">{_IN_}
+                    <description>Incising / Incisión</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_MD.jpg">{_MD_}
+                    <description>Modeling / Modelaje</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_MO.jpg">{_MO_}
+                    <description>Molding / Molding</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_OP.jpg">{_OP_}
+                    <description>Openwork (champlevé) / Calado</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_PA.jpg">{_PA_}
+                    <description>Painting / Pintura</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_PC.jpg">{_PC_}
+                    <description>Runny Paint / Pintura Chorreada</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_PS.jpg">{_PS_}
+                    <description>Paddle Stamping / Palateado</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_PU.jpg">{_PU_}
+                    <description>Punctation / Punteado</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_SS.jpg">{_SS_}
+                    <description>Shell Stamping / Estampado con conchas</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_VID.jpg">{_VID_}
+                    <description>Glazed / Vidriado</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_ZO.jpg">{_ZO_}
+                    <description>Zoning / División en zonas</description>
+                </term>
+
+            </lookup>
+        </property>
+        <property name="Interior Deco" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_NOB_}
+                    <description/>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_AP.jpg">{_AP_}
+                    <description>Apliqué / Aplicación</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_ES.jpg">{_ES_}
+                    <description>Mechanical Stamping / Estampado Mechanico</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_EX.jpg">{_EX_}
+                    <description>Excising / Subtracción o excisa</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_FP.jpg">{_FP_}
+                    <description>Finger-pinching / “Pizca” con dedos</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_GR.jpg">{_GR_}
+                    <description>Grooving / Ranuras</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_IM.jpg">{_IM_}
+                    <description>Impressing / Impresión</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_IN.jpg">{_IN_}
+                    <description>Incising / Incisión</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_MD.jpg">{_MD_}
+                    <description>Modeling / Modelaje</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_MO.jpg">{_MO_}
+                    <description>Molding / Molding</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_OP.jpg">{_OP_}
+                    <description>Openwork (champlevé) / Calado</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_PA.jpg">{_PA_}
+                    <description>Painting / Pintura</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_PC.jpg">{_PC_}
+                    <description>Runny Paint / Pintura Chorreada</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_PS.jpg">{_PS_}
+                    <description>Paddle Stamping / Palateado</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_PU.jpg">{_PU_}
+                    <description>Punctation / Punteado</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_SS.jpg">{_SS_}
+                    <description>Shell Stamping / Estampado con conchas</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_VID.jpg">{_VID_}
+                    <description>Glazed / Vidriado</description>
+                </term>
+                <term pictureURL="files/data/Gallery/Deco/21_22_ZO.jpg">{_ZO_}
+                    <description>Zoning / División en zonas</description>
+                </term>
+            </lookup>
+        </property>
+        <property name="Slip Color" type="vocab">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+            <lookup>
+                <term>{_BLB_}
+                    <description/>
+                </term>
+                <term>{_BLK_}
+                    <description/>
+                </term>
+                <term>{_BRD_}
+                    <description/>
+                </term>
+                <term>{_BRN_}
+                    <description/>
+                </term>
+                <term>{_CDP_}
+                    <description/>
+                </term>
+                <term>{_CRM_}
+                    <description/>
+                </term>
+                <term>{_DRD_}
+                    <description/>
+                </term>
+                <term>{_EXF_}
+                    <description/>
+                </term>
+                <term>{_ORG_}
+                    <description/>
+                </term>
+            </lookup>
+        </property>
+        <property name="Notes" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+        <property name="Questions" type="measure">
+            <description/>
+            <formatString><![CDATA[{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}]]></formatString>
+            <appendCharacterString><![CDATA[ - ]]></appendCharacterString>
+        </property>
+    </ArchaeologicalElement>
+</dataSchema>

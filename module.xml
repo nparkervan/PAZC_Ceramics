@@ -1,0 +1,556 @@
+<?xml version="1.0" ?>
+<module>
+	<User f="nodata">
+		<User>
+			<Select_User t="dropdown" f="user"/>
+			<Login t="button" l="Context"/>
+		</User>
+	</User>
+	<Context>
+		<Main>
+			<cols>
+				<timestamp/>
+				<author/>
+			</cols>
+			<cols>
+				<Inventory_Number f="id notnull" c="required"/>
+				<Conjunto f="notnull" c="required"/>
+			</cols>
+            <cols>
+				<Unit f="notnull" c="required"/>
+                <Subunit/>
+			</cols>
+			<cols>
+				<Locus f="notnull" c="required"/>
+				<Artifact_Number t="input" f="notnull" c="required"/>
+				<Special_Find_Number t="input" />
+			</cols>
+			<cols>
+				<Style t="dropdown" f="notnull" c="required">
+					<opts>
+						<opt>{UNKx}<desc/></opt>
+						<opt>{CUP}<desc/></opt>
+						<opt>{MCE}<desc/></opt>
+						<opt>{MCM}<desc/></opt>
+						<opt>{MCL}<desc/></opt>
+						<opt>{TRS}<desc/></opt>
+						<opt>{CJC}<desc/></opt>
+						<opt>{CJK}<desc/></opt>
+						<opt>{LME}<desc/></opt>
+						<opt>{LMM}<desc/></opt>
+						<opt>{LML}<desc/></opt>
+						<opt>{CHM}<desc/></opt>
+						<opt>{CHI}<desc/></opt>
+						<opt>{INK}<desc/></opt>
+						<opt>{COLx}<desc/></opt>
+					</opts>
+				</Style>
+				<Period t="dropdown" f="notnull" c="required">
+					<opts>
+						<opt>{UNK}<desc/></opt>
+						<opt>{FOR}<desc/></opt>
+						<opt>{EIP}<desc/></opt>
+						<opt>{MHO}<desc/></opt>
+						<opt>{LIP}<desc/></opt>
+						<opt>{LHO}<desc/></opt>
+						<opt>{LPH}<desc/></opt>
+						<opt>{LHC}<desc/></opt>
+						<opt>{COL}<desc/></opt>
+						<opt>{ECO}<desc/></opt>
+						<opt>{LCOL}<desc/></opt>
+						<opt>{REP}<desc/></opt>
+						<opt>{MOD}<desc/></opt>
+					</opts>
+				</Period>
+			</cols>
+			<cols>
+				<Functional_Category t="dropdown" f="notnull" c="required">
+					<opts>
+						<opt>{COO}<desc/></opt>
+						<opt>{COS}<desc/></opt>
+						<opt>{PCA}<desc/></opt>
+						<opt>{PCU}<desc/></opt>
+						<opt>{SER}<desc/></opt>
+						<opt>{STO}<desc/></opt>
+						<opt>{SFU}<desc/></opt>
+						<opt>{TRN}<desc/></opt>
+						<opt>{NOB}<desc/></opt>
+					</opts>
+				</Functional_Category>
+				<Functional_Category_2 t="dropdown">
+					<opts>
+						<opt>{COO}<desc/></opt>
+						<opt>{COS}<desc/></opt>
+						<opt>{PCA}<desc/></opt>
+						<opt>{PCU}<desc/></opt>
+						<opt>{SER}<desc/></opt>
+						<opt>{STO}<desc/></opt>
+						<opt>{SFU}<desc/></opt>
+						<opt>{TRN}<desc/></opt>
+						<opt>{NOB}<desc/></opt>
+					</opts>
+				</Functional_Category_2>
+			</cols>
+		</Main>
+		<General>
+			<Sherd_Type t="dropdown" f="notnull" c="required">
+				<desc> Type of Sherd </desc>
+				<opts>
+					<opt>{Ax}</opt>
+					<opt>{B}</opt>
+					<opt>{C}</opt>
+					<opt>{COx}</opt>
+					<opt>{D}</opt>
+					<opt>{DB}</opt>
+					<opt>{E}</opt>
+					<opt>{Fx}</opt>
+					<opt>{H}</opt>
+					<opt>{L}</opt>
+					<opt>{M1}</opt>
+					<opt>{N}</opt>
+					<opt>{Ox}</opt>
+					<opt>{OB}</opt>
+					<opt>{OH}</opt>
+					<opt>{ON}</opt>
+					<opt>{P1}</opt>
+					<opt>{P2}</opt>
+					<opt>{P4}</opt>
+					<opt>{Rx}</opt>
+					<opt>{RB}</opt>
+					<opt>{RN}</opt>
+					<opt>{RY}</opt>
+					<opt>{S}</opt>
+					<opt>{SH}</opt>
+					<opt>{T2}</opt>
+					<opt>{W}</opt>
+					<opt>{Z}</opt>
+				</opts>
+			</Sherd_Type>
+			<General_WARE_Category t="picture" f="notnull" c="required">
+				<desc> Todo: Add description </desc>
+				<opts>
+					<opt p="Gallery/Ware/12_WCW.jpg">{WCW}<desc/></opt>
+					<opt p="Gallery/Ware/12_VID-SNO.jpg">{VID-SNO}<desc/></opt>
+					<opt p="Gallery/Ware/12_VID-SBB.jpg">{VID-SBB}<desc/></opt>
+					<opt p="Gallery/Ware/12_VID-PANPLA.jpg">{VID-PANPLA}<desc/></opt>
+					<opt p="Gallery/Ware/12_VID-PANP.jpg">{VID-PANP}<desc/></opt>
+					<opt p="Gallery/Ware/12_VID-PANBW.jpg">{VID-PANBW}<desc/></opt>
+					<opt p="Gallery/Ware/12_VID-OTH.jpg">{VID-OTH}<desc/></opt>
+					<opt p="Gallery/Ware/12_VID-GYG.jpg">{VID-GYG}<desc/></opt>
+					<opt p="Gallery/Ware/12_STN.jpg">{STN}<desc/></opt>
+					<opt p="Gallery/Ware/12_PRW.jpg">{PRW}<desc/></opt>
+					<opt p="Gallery/Ware/12_PRC.jpg">{PRC}<desc/></opt>
+					<opt p="Gallery/Ware/12_PLN.jpg">{PLN}<desc/></opt>
+					<opt p="Gallery/Ware/12_PIP.jpg">{PIP}<desc/></opt>
+					<opt p="Gallery/Ware/12_PAL.jpg">{PAL}<desc/></opt>
+					<opt p="Gallery/Ware/12_OTH.jpg">{OTH}<desc/></opt>
+					<opt p="Gallery/Ware/12_LOZ.jpg">{LOZ}<desc/></opt>
+					<opt p="Gallery/Ware/12_DKK.jpg">{DKK}<desc/></opt>
+					<opt p="Gallery/Ware/12_BOT.jpg">{BOT}<desc/></opt>
+					<opt p="Gallery/Ware/12_BBW.jpg">{BBW}<desc/></opt>
+				</opts>
+			</General_WARE_Category>
+			<General_Form_Category t="picture" f="notnull" c="required"> 
+				<desc/>
+				<opts>
+					<opt p="Gallery/Form/16_BLB.jpg">{Bowls}
+						<opt p="Gallery/Form/16_BLB.jpg">{BLBx}</opt>
+						<opt p="Gallery/Form/16_CBC.jpg">{CBC}</opt>
+						<opt p="Gallery/Form/16_CBR.jpg">{CBR}</opt>
+						<opt p="Gallery/Form/16_LOB.jpg">{LOB}</opt>
+						<opt p="Gallery/Form/16_LBL.jpg">{LBL}</opt>
+						<opt p="Gallery/Form/16_OSM.jpg">{OSM}</opt>
+						<opt p="Gallery/Form/16_POB.jpg">{POB}</opt>
+						<opt p="Gallery/Form/16_ROB.jpg">{ROB}</opt>
+						<opt p="Gallery/Form/16_SBO.jpg">{SBO}</opt>
+						<opt p="Gallery/Form/16_SBR.jpg">{SBR}</opt>
+						<opt p="Gallery/Form/16_SOA.jpg">{SOA}</opt>
+						<opt p="Gallery/Form/16_SOB.jpg">{SOB}</opt>
+						<opt p="Gallery/Form/16_SRB.jpg">{SRB}</opt>
+						<opt p="Gallery/Form/16_SSB.jpg">{SSB}</opt>
+					</opt>
+					<opt p="Gallery/Form/16_BPL.jpg"> {Plates}
+						<opt p="Gallery/Form/16_BPL.jpg">{BPL}</opt>
+						<opt p="Gallery/Form/16_LPO.jpg">{LPO}</opt>
+						<opt p="Gallery/Form/16_PLM.jpg">{PLM}</opt>
+						<opt p="Gallery/Form/16_PNI.jpg">{PNI}</opt>
+						<opt p="Gallery/Form/16_PPL.jpg">{PPL}</opt>
+						<opt p="Gallery/Form/16_PPP.jpg">{PPP}</opt>
+						<opt p="Gallery/Form/16_RPO.jpg">{RPO}</opt>
+						<opt p="Gallery/Form/16_SRP.jpg">{SRP}</opt>
+					</opt>
+					<opt p="Gallery/Form/16_ARS.jpg"> {Jars}
+						<opt p="Gallery/Form/16_ARS.jpg">{ARS}</opt>
+						<opt p="Gallery/Form/16_CNC.jpg">{CNC}</opt>
+						<opt p="Gallery/Form/16_CNE.jpg">{CNE}</opt>
+						<opt p="Gallery/Form/16_CNR.jpg">{CNR}</opt>
+						<opt p="Gallery/Form/16_CNX.jpg">{CNX}</opt>
+						<opt p="Gallery/Form/16_HBL.jpg">{HBL}</opt>
+						<opt p="Gallery/Form/16_HBS.jpg">{HBS}</opt>
+					</opt>
+					<opt p="Gallery/Form/16_TRR.jpg"> {Tinajas_y_Botijas}
+						<opt p="Gallery/Form/16_TRR.jpg">{TRR}</opt>
+						<opt p="Gallery/Form/16_TSR.jpg">{TSR}</opt>
+						<opt p="Gallery/Form/16_TTE.jpg">{TTE}</opt>
+						<opt p="Gallery/Form/16_TTL.jpg">{TTL}</opt>
+						<opt p="Gallery/Form/16_TTM.jpg">{TTM}</opt>
+						<opt p="Gallery/Form/16_TTU.jpg">{TTU}</opt>
+					</opt>
+					<opt p="Gallery/Form/16_BLC.jpg"> {Botellas}
+						<opt p="Gallery/Form/16_BLC.jpg">{BLC}</opt>
+						<opt p="Gallery/Form/16_BLS.jpg">{BLS}</opt>
+						<opt p="Gallery/Form/16_BNI.jpg">{BNI}</opt>
+						<opt p="Gallery/Form/16_BSC.jpg">{BSC}</opt>
+						<opt p="Gallery/Form/16_BSS.jpg">{BSS}</opt>
+					</opt>
+					<opt p="Gallery/Form/16_FLO.jpg">{Cups}
+						<opt p="Gallery/Form/16_FLO.jpg">{FLO}</opt>
+						<opt p="Gallery/Form/16_KER.jpg">{KER}</opt>
+						<opt p="Gallery/Form/16_LCO.jpg">{LCO}</opt>
+						<opt p="Gallery/Form/16_LCP.jpg">{LCP}</opt>
+						<opt p="Gallery/Form/16_SCO.jpg">{SCO}</opt>
+						<opt p="Gallery/Form/16_SCP.jpg">{SCP}</opt>
+					</opt>
+					<opt p="Gallery/Form/16_RJ.jpg"> {Ollas}
+						<opt p="Gallery/Form/16_RJ.jpg">{RJ}</opt>
+						<opt p="Gallery/Form/16_MTG.jpg">{MTG}</opt>
+						<opt p="Gallery/Form/16_OCC.jpg">{OCC}</opt>
+						<opt p="Gallery/Form/16_OER.jpg">{OER}</opt>
+						<opt p="Gallery/Form/16_OFR.jpg">{OFR}</opt>
+						<opt p="Gallery/Form/16_ONI.jpg">{ONI}</opt>
+						<opt p="Gallery/Form/16_OPN.jpg">{OPN}</opt>
+						<opt p="Gallery/Form/16_OSC.jpg">{OSC}</opt>
+						<opt p="Gallery/Form/16_OSR.jpg">{OSR}</opt>
+					</opt>
+					<opt p="Gallery/Form/16_ALS.jpg"> {Other}
+						<opt p="Gallery/Form/16_UKN.jpg">{UKN}</opt>
+						<opt p="Gallery/Form/16_ALS.jpg">{ALS}</opt>
+						<opt p="Gallery/Form/16_APx.jpg">{AP}</opt>
+						<opt p="Gallery/Form/16_AZL.jpg">{AZL}</opt>
+						<opt p="Gallery/Form/16_CIR.jpg">{CIR}</opt>
+						<opt p="Gallery/Form/16_CLB.jpg">{CLB}</opt>
+						<opt p="Gallery/Form/16_CRS.jpg">{CRS}</opt>
+						<opt p="Gallery/Form/16_FGN.jpg">{FGN}</opt>
+						<opt p="Gallery/Form/16_HMS.jpg">{HMS}</opt>
+						<opt p="Gallery/Form/16_IMU.jpg">{IMU}</opt>
+						<opt p="Gallery/Form/16_MLD.jpg">{MLD}</opt>
+						<opt p="Gallery/Form/16_RAY.jpg">{RAY}</opt>
+						<opt p="Gallery/Form/16_TEJ.jpg">{TEJ}</opt>
+						<opt p="Gallery/Form/16_TIN.jpg">{TIN}</opt>
+						<opt p="Gallery/Form/16_WOR.jpg">{WOR}</opt>
+					</opt>
+				</opts>
+			</General_Form_Category>
+		</General>
+		<Firing>
+            <Firing t="picture" f="notnull" c="required">
+                <desc>Firing</desc>
+                <opts>
+                    <opt p="Gallery/Firing/19_CE.jpg">{CE}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_CI.jpg">{CI}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_CN.jpg">{CNx}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_CO.jpg">{CO}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_CR.jpg">{CR}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_CS.jpg">{CSx}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_CX.jpg">{CX}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IA.jpg">{IA}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IE.jpg">{IE}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IG.jpg">{IG}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IK.jpg">{IK}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IL.jpg">{IL}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IM.jpg">{IMx}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IN.jpg">{INx}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IO.jpg">{IO}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IP.jpg">{IP}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IR.jpg">{IR}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IT.jpg">{IT}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IU.jpg">{IU}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IX.jpg">{IX}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IY.jpg">{IY}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_IZ.jpg">{IZ}
+                        <desc/>
+                    </opt>
+                    <opt p="Gallery/Firing/19_VI.jpg">{VI}
+                        <desc/>
+                    </opt>
+                </opts>
+            </Firing>
+		</Firing>
+		<Surface>
+			<Surface_Condition t="picture" f="notnull" c="required">
+				<desc> Surface Condition </desc>
+				<opts>
+					<opt p="Gallery/Surface/20_WW.jpg">{WW}<desc/></opt>
+					<opt p="Gallery/Surface/20_VN.jpg">{VN}<desc/></opt>
+					<opt p="Gallery/Surface/20_SS.jpg">{SSx}<desc/></opt>
+					<opt p="Gallery/Surface/20_SN.jpg">{SN}<desc/></opt>
+					<opt p="Gallery/Surface/20_NS.jpg">{NS}<desc/></opt>
+					<opt p="Gallery/Surface/20_NN.jpg">{NN}<desc/></opt>
+					<opt p="Gallery/Surface/20_NE.jpg">{NE}<desc/></opt>
+					<opt p="Gallery/Surface/20_NC.jpg">{NC}<desc/></opt>
+					<opt p="Gallery/Surface/20_NB.jpg">{NB}<desc/></opt>
+					<opt p="Gallery/Surface/20_GN.jpg">{GN}<desc/></opt>
+					<opt p="Gallery/Surface/20_EN.jpg">{EN}<desc/></opt>
+					<opt p="Gallery/Surface/20_EE.jpg">{EE}<desc/></opt>
+					<opt p="Gallery/Surface/20_CS.jpg">{CS}<desc/></opt>
+					<opt p="Gallery/Surface/20_CN.jpg">{CN}<desc/></opt>
+					<opt p="Gallery/Surface/20_CC.jpg">{CC}<desc/></opt>
+					<opt p="Gallery/Surface/20_BN.jpg">{BN}<desc/></opt>
+					<opt p="Gallery/Surface/20_BB.jpg">{BB}<desc/></opt>
+				</opts>
+			</Surface_Condition>
+			<Surface_Condition_2 t="picture">
+				<desc> Surface Condition 2 </desc>
+				<opts>
+					<opt p="Gallery/Surface/20_WW.jpg">{WW}<desc/></opt>
+					<opt p="Gallery/Surface/20_VN.jpg">{VN}<desc/></opt>
+					<opt p="Gallery/Surface/20_SS.jpg">{SSx}<desc/></opt>
+					<opt p="Gallery/Surface/20_SN.jpg">{SN}<desc/></opt>
+					<opt p="Gallery/Surface/20_NS.jpg">{NS}<desc/></opt>
+					<opt p="Gallery/Surface/20_NN.jpg">{NN}<desc/></opt>
+					<opt p="Gallery/Surface/20_NE.jpg">{NE}<desc/></opt>
+					<opt p="Gallery/Surface/20_NC.jpg">{NC}<desc/></opt>
+					<opt p="Gallery/Surface/20_NB.jpg">{NB}<desc/></opt>
+					<opt p="Gallery/Surface/20_GN.jpg">{GN}<desc/></opt>
+					<opt p="Gallery/Surface/20_EN.jpg">{EN}<desc/></opt>
+					<opt p="Gallery/Surface/20_EE.jpg">{EE}<desc/></opt>
+					<opt p="Gallery/Surface/20_CS.jpg">{CS}<desc/></opt>
+					<opt p="Gallery/Surface/20_CN.jpg">{CN}<desc/></opt>
+					<opt p="Gallery/Surface/20_CC.jpg">{CC}<desc/></opt>
+					<opt p="Gallery/Surface/20_BN.jpg">{BN}<desc/></opt>
+					<opt p="Gallery/Surface/20_BB.jpg">{BB}<desc/></opt>
+				</opts>
+			</Surface_Condition_2>
+			<Predominant_Paste_Color t="dropdown" f="notnull" c="required">
+				<opts>
+					<opt>{BKR}</opt>
+					<opt>{BLB}</opt>
+					<opt>{BLK}</opt>
+					<opt>{BRN}</opt>
+					<opt>{GWR}</opt>
+					<opt>{ORG}</opt>
+					<opt>{RMR}</opt>
+					<opt>{VER}</opt>
+					<opt>{NOB}</opt>
+				</opts>
+			</Predominant_Paste_Color>
+			<Paste_Code/>
+		</Surface>
+		<Files>
+			<Photograph t="camera"/>
+			<Attach_Photo t="file"/>
+			<Attach_Sketch t="file"/>
+		</Files>
+		<Measurements>
+            <Weight/>
+			<cols>
+				<Base_Thickness/>
+				<Base_Diameter/>
+				<Base_Percentage/>
+			</cols>
+			<cols>
+				<Body_Thickness/>
+				<Body_Diameter/>
+			</cols>
+			<cols>
+				<Neck_Thickness/>
+				<Neck_Height/>
+			</cols>
+			<cols>
+				<Rim_Diameter/>
+				<Rim_Thickness/>
+				<Rim_Percentage/>
+			</cols>
+			<Rim_Profile t= "picture" >
+				<desc> Rim profile </desc>
+				<opts>
+					<opt p="Gallery/Rims/17_BOT1.jpg">{BOT1}<desc/></opt>
+					<opt p="Gallery/Rims/17_BOT2.jpg">{BOT2}<desc/></opt>
+					<opt p="Gallery/Rims/17_BOT3.jpg">{BOT3}<desc/></opt>
+					<opt p="Gallery/Rims/17_BOT4.jpg">{BOT4}<desc/></opt>
+					<opt p="Gallery/Rims/17_BOT5.jpg">{BOT5}<desc/></opt>
+					<opt p="Gallery/Rims/17_BOT6.jpg">{BOT6}<desc/></opt>
+					<opt p="Gallery/Rims/17_BOT7.jpg">{BOT7}<desc/></opt>
+					<opt p="Gallery/Rims/17_BOT8.jpg">{BOT8}<desc/></opt>
+					<opt p="Gallery/Rims/17_BOT9.jpg">{BOT9}<desc/></opt>
+					<opt p="Gallery/Rims/17_OCEgim.jpg">{OCEgim}<desc/></opt>
+					<opt p="Gallery/Rims/17_OCHEcih.jpg">{OCHEcih}<desc/></opt>
+					<opt p="Gallery/Rims/17_OCHEcu.jpg">{OCHEcu}<desc/></opt>
+					<opt p="Gallery/Rims/17_OCHUg.jpg">{OCHUg}<desc/></opt>
+					<opt p="Gallery/Rims/17_OCUxu.jpg">{OCUxu}<desc/></opt>
+					<opt p="Gallery/Rims/17_OG_CHE_Uge.jpg">{OG_CHE_Uge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OG_CHUge.jpg">{OG_CHUge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OGEgi.jpg">{OGEgi}<desc/></opt>
+					<opt p="Gallery/Rims/17_OGEgi_.jpg">{OGEgi_}<desc/></opt>
+					<opt p="Gallery/Rims/17_OGEMoemm.jpg">{OGEMoemm}<desc/></opt>
+					<opt p="Gallery/Rims/17_OGIge.jpg">{OGIge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OGIMg.jpg">{OGIMg}<desc/></opt>
+					<opt p="Gallery/Rims/17_OGUgem.jpg">{OGUgem}<desc/></opt>
+					<opt p="Gallery/Rims/17_OGU_IHge.jpg">{OGU_IHge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OGUxu.jpg">{OGUxu}<desc/></opt>
+					<opt p="Gallery/Rims/17_OG_XHIH_Uge.jpg">{OG_XHIH_Uge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OG_XHU_IHxh.jpg">{OG_XHU_IHxh}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXEHc.jpg">{OXEHc}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXEH.jpg">{OXEH}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXExem.jpg">{OXExem}<desc/></opt>
+					<opt p="Gallery/Rims/17_OX_GIge.jpg">{OX_GIge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXHEHgu.jpg">{OXHEHgu}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXHUge.jpg">{OXHUge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXHU.jpg">{OXHU}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXHUxhu.jpg">{OXHUxhu}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXH_XEge.jpg">{OXH_XEge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXH_XEgemm.jpg">{OXH_XEgemm}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXU_EH.jpg">{OXU_EH}<desc/></opt>
+					<opt p="Gallery/Rims/17_OXUge.jpg">{OXUge}<desc/></opt>
+					<opt p="Gallery/Rims/17_OX_XHIx.jpg">{OX_XHIx}<desc/></opt>
+					<opt p="Gallery/Rims/17_SCE.jpg">{SCE}<desc/></opt>
+					<opt p="Gallery/Rims/17_SCEM.jpg">{SCEM}<desc/></opt>
+					<opt p="Gallery/Rims/17_SCHE.jpg">{SCHE}<desc/></opt>
+					<opt p="Gallery/Rims/17_SCHEMM.jpg">{SCHEMM}<desc/></opt>
+					<opt p="Gallery/Rims/17_SCI.jpg">{SCI}<desc/></opt>
+					<opt p="Gallery/Rims/17_SCIM.jpg">{SCIM}<desc/></opt>
+					<opt p="Gallery/Rims/17_SCU.jpg">{SCU}<desc/></opt>
+					<opt p="Gallery/Rims/17_SGE.jpg">{SGE}<desc/></opt>
+					<opt p="Gallery/Rims/17_SGEM.jpg">{SGEM}<desc/></opt>
+					<opt p="Gallery/Rims/17_SGI.jpg">{SGI}<desc/></opt>
+					<opt p="Gallery/Rims/17_SGIH.jpg">{SGIH}<desc/></opt>
+					<opt p="Gallery/Rims/17_SGU.jpg">{SGU}<desc/></opt>
+					<opt p="Gallery/Rims/17_SXE.jpg">{SXE}<desc/></opt>
+					<opt p="Gallery/Rims/17_SXEH.jpg">{SXEH}<desc/></opt>
+					<opt p="Gallery/Rims/17_SXEM.jpg">{SXEM}<desc/></opt>
+					<opt p="Gallery/Rims/17_SXEMM.jpg">{SXEMM}<desc/></opt>
+					<opt p="Gallery/Rims/17_SXI.jpg">{SXI}<desc/></opt>
+					<opt p="Gallery/Rims/17_SXU.jpg">{SXU}<desc/></opt>		
+				</opts>
+			</Rim_Profile>
+			<cols>
+				<Handle_Width/>
+				<Handle_Thickness/>
+			</cols>
+			<cols>
+				<Handle_Length/>
+				<Handle_Height/>
+			</cols>
+			<Handle_Form t= "picture">
+				<desc>Form of the handle </desc>
+				<opts>
+					<opt p="Gallery/Handles/18_T.jpg">{T}<desc/></opt>
+					<opt p="Gallery/Handles/18_R.jpg">{R}<desc/></opt>
+					<opt p="Gallery/Handles/18_O.jpg">{O}<desc/></opt>
+					<opt p="Gallery/Handles/18_FS.jpg">{FS}<desc/></opt>
+					<opt p="Gallery/Handles/18_FC.jpg">{FC}<desc/></opt>
+					<opt p="Gallery/Handles/18_F.jpg">{F}<desc/></opt>
+					<opt p="Gallery/Handles/18_BR.jpg">{BR}<desc/></opt>
+					<opt p="Gallery/Handles/18_BK.jpg">{BK}<desc/></opt>
+					<opt p="Gallery/Handles/18_A.jpg">{A}<desc/></opt>
+				</opts>
+			</Handle_Form>
+			<Spout_Diameter/>
+			<Exterior_Deco t= "picture">
+				<opts>
+					<opt p="Gallery/Deco/21_22_AP.jpg">{AP}<desc>Apliqué / Aplicación</desc></opt>
+					<opt p="Gallery/Deco/21_22_ES.jpg">{ES}<desc>Mechanical Stamping / Estampado Mechanico </desc></opt>
+					<opt p="Gallery/Deco/21_22_EX.jpg">{EX}<desc>Excising / Subtracción o excisa</desc></opt>
+					<opt p="Gallery/Deco/21_22_FP.jpg">{FP}<desc>Finger-pinching / “Pizca” con dedos</desc></opt>
+					<opt p="Gallery/Deco/21_22_GR.jpg">{GR}<desc>Grooving / Ranuras</desc></opt>
+					<opt p="Gallery/Deco/21_22_IM.jpg">{IM}<desc>Impressing / Impresión</desc></opt>
+					<opt p="Gallery/Deco/21_22_IN.jpg">{IN}<desc>Incising / Incisión</desc></opt>
+					<opt p="Gallery/Deco/21_22_MD.jpg">{MD}<desc>Modeling / Modelaje</desc></opt>
+					<opt p="Gallery/Deco/21_22_MO.jpg">{MO}<desc>Molding / Molding</desc></opt>
+					<opt p="Gallery/Deco/21_22_OP.jpg">{OP}<desc>Openwork (champlevé) / Calado</desc></opt>
+					<opt p="Gallery/Deco/21_22_PA.jpg">{PA}<desc>Painting / Pintura</desc></opt>
+					<opt p="Gallery/Deco/21_22_PC.jpg">{PC}<desc>Runny Paint / Pintura Chorreada</desc></opt>
+					<opt p="Gallery/Deco/21_22_PS.jpg">{PS}<desc>Paddle Stamping / Palateado</desc></opt>
+					<opt p="Gallery/Deco/21_22_PU.jpg">{PU}<desc>Punctation / Punteado</desc></opt>
+					<opt p="Gallery/Deco/21_22_SS.jpg">{SS}<desc>Shell Stamping / Estampado con conchas</desc></opt>
+					<opt p="Gallery/Deco/21_22_VID.jpg">{VID}<desc>Glazed / Vidriado</desc></opt>
+					<opt p="Gallery/Deco/21_22_ZO.jpg">{ZO}<desc>Zoning / División en zonas</desc></opt>
+				</opts>
+			</Exterior_Deco>
+			<Interior_Deco t= "picture">
+				<opts>
+					<opt p="Gallery/Deco/21_22_AP.jpg">{AP}<desc>Apliqué / Aplicación</desc></opt>
+					<opt p="Gallery/Deco/21_22_ES.jpg">{ES}<desc>Mechanical Stamping / Estampado Mechanico </desc></opt>
+					<opt p="Gallery/Deco/21_22_EX.jpg">{EX}<desc>Excising / Subtracción o excisa</desc></opt>
+					<opt p="Gallery/Deco/21_22_FP.jpg">{FP}<desc>Finger-pinching / “Pizca” con dedos</desc></opt>
+					<opt p="Gallery/Deco/21_22_GR.jpg">{GR}<desc>Grooving / Ranuras</desc></opt>
+					<opt p="Gallery/Deco/21_22_IM.jpg">{IM}<desc>Impressing / Impresión</desc></opt>
+					<opt p="Gallery/Deco/21_22_IN.jpg">{IN}<desc>Incising / Incisión</desc></opt>
+					<opt p="Gallery/Deco/21_22_MD.jpg">{MD}<desc>Modeling / Modelaje</desc></opt>
+					<opt p="Gallery/Deco/21_22_MO.jpg">{MO}<desc>Molding / Molding</desc></opt>
+					<opt p="Gallery/Deco/21_22_OP.jpg">{OP}<desc>Openwork (champlevé) / Calado</desc></opt>
+					<opt p="Gallery/Deco/21_22_PA.jpg">{PA}<desc>Painting / Pintura</desc></opt>
+					<opt p="Gallery/Deco/21_22_PC.jpg">{PC}<desc>Runny Paint / Pintura Chorreada</desc></opt>
+					<opt p="Gallery/Deco/21_22_PS.jpg">{PS}<desc>Paddle Stamping / Palateado</desc></opt>
+					<opt p="Gallery/Deco/21_22_PU.jpg">{PU}<desc>Punctation / Punteado</desc></opt>
+					<opt p="Gallery/Deco/21_22_SS.jpg">{SS}<desc>Shell Stamping / Estampado con conchas</desc></opt>
+					<opt p="Gallery/Deco/21_22_VID.jpg">{VID}<desc>Glazed / Vidriado</desc></opt>
+					<opt p="Gallery/Deco/21_22_ZO.jpg">{ZO}<desc>Zoning / División en zonas</desc></opt>
+				</opts>
+			</Interior_Deco>
+			<Slip_Color t="dropdown">
+				<opts>
+					<opt>{BLB}</opt>
+					<opt>{BLK}</opt>
+					<opt>{BRD}</opt>
+					<opt>{BRN}</opt>
+					<opt>{CDP}</opt>
+					<opt>{CRM}</opt>
+					<opt>{DRD}</opt>
+					<opt>{EXF}</opt>
+					<opt>{ORG}</opt>
+				</opts>
+			</Slip_Color>
+		</Measurements>
+		<Validation>
+			<Notes t="input"/>
+			<Questions t="input"/>
+			<Validate t="button"/>
+			<New_Bag t="button" l="Control"/>
+			<Same_Bag t="button" l="Control"/>
+		</Validation>
+		<search/>
+	</Context>
+</module>

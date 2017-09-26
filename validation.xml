@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<ValidationSchema>
+  <ArchaeologicalElement name="Context">
+    <property name="Inventory Number">
+      <validator type="blankchecker">
+        <param value="measure" type="field"/>
+      </validator>
+    </property>
+    <property name="Conjunto">
+      <validator type="blankchecker">
+        <param value="measure" type="field"/>
+      </validator>
+    </property>
+    <property name="Unit">
+      <validator type="blankchecker">
+        <param value="measure" type="field"/>
+      </validator>
+    </property>
+    <property name="Locus">
+      <validator type="blankchecker">
+        <param value="measure" type="field"/>
+      </validator>
+    </property>
+    <property name="Artifact Number">
+      <validator type="blankchecker">
+        <param value="measure" type="field"/>
+      </validator>
+    </property>
+    <property name="Style">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+    <property name="Period">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+    <property name="Functional Category">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+    <property name="Sherd Type">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+    <property name="General WARE Category">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+    <property name="General Form Category">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+    <property name="Firing">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+    <property name="Surface Condition">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+    <property name="Predominant Paste Color">
+      <validator type="blankchecker">
+        <param value="vocab" type="field"/>
+      </validator>
+    </property>
+  </ArchaeologicalElement>
+</ValidationSchema>
